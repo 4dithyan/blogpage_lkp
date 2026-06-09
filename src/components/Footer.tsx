@@ -1,0 +1,157 @@
+import { Facebook, Instagram, Twitter, Plane, ShieldCheck, Heart, Clock, ArrowUp, Send } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer className="w-full mt-24">
+      {/* Wave Separator */}
+      <div className="w-full h-16 md:h-24 lg:h-32 overflow-hidden leading-none mb-[-1px]">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="w-full h-full text-[var(--color-brand-dark)]"
+          fill="currentColor"
+        >
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C101.8,42.54,208.57,77.56,321.39,56.44Z" />
+        </svg>
+      </div>
+
+      {/* Main Footer Content */}
+      <div className="bg-[var(--color-brand-dark)] text-white pt-16 pb-12 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          
+          {/* Newsletter Section */}
+          <div className="lg:col-span-2 space-y-6">
+            <div className="flex items-center gap-4">
+              <div className="bg-white text-[var(--color-brand-dark)] p-3 rounded-2xl">
+                <Plane size={28} className="transform -rotate-45" />
+              </div>
+              <div>
+                <h3 className="text-3xl font-bold">Stay inspired, <br />travel better.</h3>
+              </div>
+            </div>
+            <p className="text-gray-300 max-w-sm text-sm">
+              Get stories, travel tips and exclusive offers straight to your inbox.
+            </p>
+
+            <div className="flex items-center gap-2 max-w-md bg-[rgba(255,255,255,0.1)] rounded-full p-1 border border-[rgba(255,255,255,0.2)]">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="bg-transparent text-white px-4 py-2 w-full focus:outline-none text-sm placeholder:text-gray-400"
+              />
+              <button className="bg-[var(--color-brand)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-cyan-600 transition-colors">
+                Subscribe
+              </button>
+            </div>
+
+            <div className="pt-4 flex items-center gap-4">
+              <span className="text-sm text-gray-300">Follow our journey</span>
+              <div className="flex gap-3">
+                <a href="#" className="w-8 h-8 rounded-full border border-gray-500 flex items-center justify-center hover:bg-white hover:text-[var(--color-brand-dark)] hover:border-white transition-colors">
+                  <Instagram size={14} />
+                </a>
+                <a href="#" className="w-8 h-8 rounded-full border border-gray-500 flex items-center justify-center hover:bg-white hover:text-[var(--color-brand-dark)] hover:border-white transition-colors">
+                  <Facebook size={14} />
+                </a>
+                <a href="#" className="w-8 h-8 rounded-full border border-gray-500 flex items-center justify-center hover:bg-white hover:text-[var(--color-brand-dark)] hover:border-white transition-colors">
+                  <Twitter size={14} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h4 className="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-6">Explore</h4>
+            <ul className="space-y-4 text-sm text-gray-300">
+              <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Destinations</a></li>
+              <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Experiences</a></li>
+              <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Travel Guides</a></li>
+              <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Tips & Advice</a></li>
+              <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Blog</a></li>
+            </ul>
+          </div>
+
+          <div className="flex gap-16 lg:gap-12">
+            <div>
+              <h4 className="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-6">Company</h4>
+              <ul className="space-y-4 text-sm text-gray-300">
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">About Us</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Careers</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Press</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Sustainability</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-6">Support</h4>
+              <ul className="space-y-4 text-sm text-gray-300">
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Help Center</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">FAQs</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-[var(--color-brand)] transition-colors">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Bottom Info Bar */}
+      <div className="bg-white border-t border-gray-100 py-6 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 w-full lg:w-auto text-sm">
+            
+            <div className="flex items-center gap-3">
+              <div className="text-[var(--color-brand)]"><Heart size={24} /></div>
+              <div>
+                <p className="font-semibold text-[var(--color-brand-dark)]">Handpicked experiences</p>
+                <p className="text-xs text-gray-500">Curated with love by travel experts</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <div className="text-[var(--color-brand)]"><ShieldCheck size={24} /></div>
+              <div>
+                <p className="font-semibold text-[var(--color-brand-dark)]">Best price guarantee</p>
+                <p className="text-xs text-gray-500">We match the price you find</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="text-[var(--color-brand)]"><Clock size={24} /></div>
+              <div>
+                <p className="font-semibold text-[var(--color-brand-dark)]">24/7 support</p>
+                <p className="text-xs text-gray-500">We're here for you anytime, anywhere</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="text-[var(--color-brand)]"><Send size={24} /></div>
+              <div>
+                <p className="font-semibold text-[var(--color-brand-dark)]">Travel with confidence</p>
+                <p className="text-xs text-gray-500">Your safety is our top priority</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Stamp and Back to top */}
+          <div className="flex items-center gap-6 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-6 mt-6 md:mt-0 w-full md:w-auto justify-between md:justify-end">
+            <div className="relative rotate-6 text-center px-4 py-2 border-2 border-cyan-100 rounded-md bg-cyan-50">
+               <p className="text-[10px] uppercase tracking-wider text-[var(--color-brand)] font-bold">Let's explore</p>
+               <p className="text-xs font-semibold text-[var(--color-brand-dark)]">the world <span className="text-[var(--color-brand)]">together</span></p>
+            </div>
+            <button className="flex items-center gap-2 text-xs font-medium text-gray-500 hover:text-[var(--color-brand)] transition-colors">
+              Back to top
+              <span className="bg-[var(--color-brand)] text-white p-1 rounded-full"><ArrowUp size={12} /></span>
+            </button>
+          </div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto mt-6 pt-6 border-t border-gray-100 text-xs text-gray-400">
+          © 2026 intheplanet. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+}
