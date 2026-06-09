@@ -14,13 +14,13 @@ const posts = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1520689913988-825fb4d1ecb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     category: "Travel Guides",
     title: "A Guide to Italy's Most Romantic Lakes",
     description: "Explore the charm, culture and cuisine around Italy's hidden lake towns.",
     date: "May 18, 2024",
     readTime: "6 min read",
-    imageClassName: "h-56 rounded-3xl",
+    imageClassName: "h-56 rounded-[40px]",
   },
   {
     id: 3,
@@ -80,12 +80,13 @@ export function BlogGrid() {
           <BlogCard {...posts[1]} />
           
           {/* Quote Block */}
-          <div className="relative py-12 px-8 flex items-center justify-center text-center my-4">
-            <div className="absolute inset-0 bg-cyan-50 rounded-[40px] rounded-br-[100px] rounded-tl-[80px] -z-10 opacity-70 transform rotate-[-2deg]"></div>
-            <Quote size={40} className="absolute top-4 right-8 text-[var(--color-brand)] opacity-20" />
-            <Quote size={30} className="absolute bottom-4 left-8 text-[var(--color-brand)] opacity-20 transform rotate-180" />
+          <div className="relative py-16 px-10 flex items-center justify-center text-center my-6">
+            <div className="absolute inset-0 bg-cyan-50 opacity-90 -z-10 transform scale-105" 
+                 style={{ borderRadius: '120px 40px 120px 40px' }}></div>
+            <Quote size={50} fill="currentColor" className="absolute top-6 left-8 text-cyan-200 opacity-60" />
+            <Quote size={50} fill="currentColor" className="absolute bottom-6 right-8 text-cyan-200 opacity-60 transform rotate-180" />
             
-            <h3 className="text-2xl font-bold text-[var(--color-brand-dark)] leading-snug">
+            <h3 className="text-[28px] font-bold text-[var(--color-brand-dark)] leading-snug">
               The world is full of <br />
               beautiful places — <br />
               let's go <span className="text-[var(--color-brand)] italic">explore</span> them.

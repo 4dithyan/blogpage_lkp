@@ -6,12 +6,12 @@ export function Footer() {
       {/* Wave Separator */}
       <div className="w-full h-16 md:h-24 lg:h-32 overflow-hidden leading-none mb-[-1px]">
         <svg
-          viewBox="0 0 1200 120"
+          viewBox="0 0 1440 120"
           preserveAspectRatio="none"
           className="w-full h-full text-[var(--color-brand-dark)]"
           fill="currentColor"
         >
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C101.8,42.54,208.57,77.56,321.39,56.44Z" />
+          <path d="M0,32 C288,-32 720,128 1440,32 L1440,120 L0,120 Z" />
         </svg>
       </div>
 
@@ -136,20 +136,20 @@ export function Footer() {
           </div>
 
           {/* Stamp and Back to top */}
-          <div className="flex items-center gap-6 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-6 mt-6 md:mt-0 w-full md:w-auto justify-between md:justify-end">
-            <div className="relative rotate-6 text-center px-4 py-2 border-2 border-cyan-100 rounded-md bg-cyan-50">
-               <p className="text-[10px] uppercase tracking-wider text-[var(--color-brand)] font-bold">Let's explore</p>
-               <p className="text-xs font-semibold text-[var(--color-brand-dark)]">the world <span className="text-[var(--color-brand)]">together</span></p>
+          <div className="flex items-center gap-8 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8 mt-6 md:mt-0 w-full md:w-auto justify-between md:justify-end">
+            <div className="relative rotate-6 text-center px-5 py-3 border-[2px] border-dashed border-cyan-300 rounded-lg bg-cyan-50/50 shadow-sm">
+               <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-brand)] font-bold mb-1">Let's explore</p>
+               <p className="text-sm font-bold text-[var(--color-brand-dark)] leading-tight">the world <br /><span className="text-[var(--color-brand)]">together</span></p>
             </div>
-            <button className="flex items-center gap-2 text-xs font-medium text-gray-500 hover:text-[var(--color-brand)] transition-colors">
+            <button className="flex items-center gap-2 text-xs font-semibold text-gray-500 hover:text-[var(--color-brand)] transition-colors">
               Back to top
-              <span className="bg-[var(--color-brand)] text-white p-1 rounded-full"><ArrowUp size={12} /></span>
+              <span className="bg-[var(--color-brand)] text-white p-1.5 rounded-full shadow-sm"><ArrowUp size={14} /></span>
             </button>
           </div>
         </div>
         
-        <div className="max-w-7xl mx-auto mt-6 pt-6 border-t border-gray-100 text-xs text-gray-400">
-          © 2026 intheplanet. All rights reserved.
+        <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400">
+          © 2026 littleknownplanet. All rights reserved.
         </div>
       </div>
     </footer>
