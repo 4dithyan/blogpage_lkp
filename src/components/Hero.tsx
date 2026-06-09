@@ -17,38 +17,37 @@ export function Hero() {
         <p className="text-[var(--color-brand)] font-semibold tracking-widest text-sm uppercase">
           Our Blog
         </p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[var(--color-brand-dark)] leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-[80px] font-bold text-[var(--color-brand-dark)] leading-[1.1] mb-6">
           Stories that <br />
-          inspire <span className="text-[var(--color-brand)] italic font-light">journeys</span>
+          inspire <br className="lg:hidden" /><span className="text-[var(--color-brand)] italic font-light">journeys</span>
         </h1>
-        <p className="text-gray-600 text-lg max-w-md">
+        <p className="text-gray-600 text-lg md:text-xl max-w-md mb-8">
           Travel guides, hidden gems and real stories from around the world.
         </p>
         
-        <button className="group flex items-center gap-3 bg-[var(--color-brand)] text-white px-6 py-3 rounded-full font-medium hover:bg-cyan-600 transition-colors">
+        <button className="group flex items-center gap-4 bg-[var(--color-brand)] text-white px-8 py-4 rounded-full font-semibold hover:bg-cyan-600 transition-colors shadow-md">
           Explore All Posts
-          <span className="bg-white text-[var(--color-brand)] rounded-full p-1 group-hover:translate-x-1 transition-transform">
-            <ArrowRight size={18} />
+          <span className="bg-white text-[var(--color-brand)] rounded-full p-1.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight size={20} />
           </span>
         </button>
       </motion.div>
 
       {/* Right Content - Images */}
-      <div className="flex-1 relative h-[500px] w-full flex items-center justify-center">
-        {/* Floating Background dots/shapes could be added here */}
+      <div className="flex-1 relative h-[380px] sm:h-[500px] lg:h-[600px] w-full flex items-center justify-center mt-8 lg:mt-0">
+        {/* Floating Decorative Elements */}
+        <div className="absolute top-10 left-10 flex gap-2 rotate-12 opacity-40">
+          <div className="w-4 h-8 bg-cyan-200 rounded-full"></div>
+          <div className="w-4 h-8 bg-cyan-200 rounded-full mt-4"></div>
+          <div className="w-4 h-8 bg-cyan-200 rounded-full mt-2"></div>
+        </div>
         
-        {/* Top Left Image - Overwater Bungalow */}
+        {/* Main Image (Left on Desktop, Top on Mobile) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9, x: -20 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="absolute top-0 left-0 w-[60%] h-[65%] z-10 overflow-hidden"
-          style={{ 
-            borderTopLeftRadius: '40px', 
-            borderTopRightRadius: '120px', 
-            borderBottomRightRadius: '40px', 
-            borderBottomLeftRadius: '120px' 
-          }}
+          className="absolute top-0 lg:top-10 left-[10%] lg:left-0 w-[80%] lg:w-[60%] h-[55%] lg:h-[80%] z-10 overflow-hidden rounded-[140px_140px_20px_20px] lg:rounded-[140px_40px_140px_40px]"
         >
           <Image 
             src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
@@ -58,12 +57,12 @@ export function Hero() {
           />
         </motion.div>
 
-        {/* Top Right Image - Circle */}
+        {/* Second Image (Circle) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9, x: 20 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="absolute top-[-5%] right-0 w-[45%] h-[45%] z-20 rounded-full overflow-hidden border-4 border-white shadow-lg"
+          className="absolute bottom-4 left-0 lg:left-auto lg:top-0 right-auto lg:right-4 w-[45%] h-[40%] lg:h-[45%] z-20 rounded-full overflow-hidden border-[4px] lg:border-[6px] border-white shadow-xl"
         >
           <Image 
             src="https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
@@ -73,18 +72,12 @@ export function Hero() {
           />
         </motion.div>
 
-        {/* Bottom Right Image - Organic Shape */}
+        {/* Third Image */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="absolute bottom-[5%] right-[5%] w-[55%] h-[45%] z-10 overflow-hidden"
-          style={{ 
-            borderTopLeftRadius: '100px', 
-            borderTopRightRadius: '40px', 
-            borderBottomRightRadius: '100px', 
-            borderBottomLeftRadius: '40px' 
-          }}
+          className="absolute bottom-0 right-[5%] lg:right-0 w-[45%] lg:w-[55%] h-[45%] lg:h-[45%] z-20 overflow-hidden border-[4px] lg:border-[6px] border-white shadow-xl rounded-[60px_60px_40px_40px] lg:rounded-[60px_100px_40px_120px]"
         >
           <Image 
             src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 

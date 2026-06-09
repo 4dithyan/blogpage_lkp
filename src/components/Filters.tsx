@@ -2,17 +2,16 @@ import { Search } from "lucide-react";
 
 const categories = [
   "All Posts",
-  "Destinations",
-  "Travel Guides",
-  "Experiences",
-  "Tips & Advice"
+  "Experience",
+  "Event",
+  "Stay"
 ];
 
 export function Filters() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+    <section className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
       {/* Category Pills */}
-      <div className="flex flex-wrap items-center gap-3">
+      <div className="flex flex-wrap gap-3 w-full md:w-auto">
         {categories.map((category, index) => (
           <button
             key={category}
@@ -28,7 +27,7 @@ export function Filters() {
       </div>
 
       {/* Search Bar */}
-      <div className="relative w-full md:w-64 lg:w-80">
+      <div className="relative w-full md:w-64 lg:w-80 flex-shrink-0">
         <input
           type="text"
           placeholder="Search blogs..."

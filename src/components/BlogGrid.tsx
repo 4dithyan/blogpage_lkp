@@ -5,7 +5,7 @@ const posts = [
   {
     id: 1,
     image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Destinations",
+    category: "Experience",
     title: "Island Hopping in Greece: A Dream Itinerary",
     description: "Sun-kissed islands, crystal-clear waters and timeless beauty — perfect for your Greek adventure.",
     date: "May 20, 2024",
@@ -14,18 +14,18 @@ const posts = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1520689913988-825fb4d1ecb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Travel Guides",
+    image: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Experience",
     title: "A Guide to Italy's Most Romantic Lakes",
     description: "Explore the charm, culture and cuisine around Italy's hidden lake towns.",
     date: "May 18, 2024",
     readTime: "6 min read",
-    imageClassName: "h-56 rounded-3xl",
+    imageClassName: "h-56 rounded-[40px]",
   },
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Experiences",
+    category: "Event",
     title: "Unforgettable Evenings by the Sea",
     description: "How we create magical seaside events that leave lasting memories.",
     date: "May 12, 2024",
@@ -35,7 +35,7 @@ const posts = [
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Travel Guides",
+    category: "Experience",
     title: "Wander Off the Beaten Path: Hidden Gems",
     description: "Explore lesser-known places that offer incredible experiences and memories.",
     date: "May 6, 2024",
@@ -45,7 +45,7 @@ const posts = [
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Guides",
+    category: "Stay",
     title: "The Ultimate Escape: Private Villas in Bali",
     description: "Discover handpicked private villas in Bali that offer luxury, privacy and breathtaking views.",
     date: "May 15, 2024",
@@ -56,7 +56,7 @@ const posts = [
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Tips & Advice",
+    category: "Event",
     title: "8 Travel Tips for a Stress-Free Vacation",
     description: "Simple tips to help you plan better, travel smarter and enjoy more.",
     date: "May 15, 2024",
@@ -80,12 +80,13 @@ export function BlogGrid() {
           <BlogCard {...posts[1]} />
           
           {/* Quote Block */}
-          <div className="relative py-12 px-8 flex items-center justify-center text-center my-4">
-            <div className="absolute inset-0 bg-cyan-50 rounded-[40px] rounded-br-[100px] rounded-tl-[80px] -z-10 opacity-70 transform rotate-[-2deg]"></div>
-            <Quote size={40} className="absolute top-4 right-8 text-[var(--color-brand)] opacity-20" />
-            <Quote size={30} className="absolute bottom-4 left-8 text-[var(--color-brand)] opacity-20 transform rotate-180" />
+          <div className="relative py-16 px-10 flex items-center justify-center text-center my-6">
+            <div className="absolute inset-0 bg-cyan-50 opacity-90 -z-10 transform scale-105" 
+                 style={{ borderRadius: '120px 40px 120px 40px' }}></div>
+            <Quote size={50} fill="currentColor" className="absolute top-6 left-8 text-cyan-200 opacity-60" />
+            <Quote size={50} fill="currentColor" className="absolute bottom-6 right-8 text-cyan-200 opacity-60 transform rotate-180" />
             
-            <h3 className="text-2xl font-bold text-[var(--color-brand-dark)] leading-snug">
+            <h3 className="text-xl md:text-[28px] font-bold text-[var(--color-brand-dark)] leading-snug">
               The world is full of <br />
               beautiful places — <br />
               let's go <span className="text-[var(--color-brand)] italic">explore</span> them.
@@ -100,6 +101,13 @@ export function BlogGrid() {
           <BlogCard {...posts[2]} />
           <BlogCard {...posts[5]} />
         </div>
+      </div>
+
+      <div className="mt-16 flex justify-center w-full lg:hidden">
+        <button className="flex items-center gap-2 border border-gray-200 text-gray-600 rounded-full px-8 py-3 text-sm font-semibold hover:border-gray-300 hover:text-[var(--color-brand-dark)] transition-colors">
+          Load more posts
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
       </div>
     </section>
   );
