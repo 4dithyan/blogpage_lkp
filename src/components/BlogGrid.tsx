@@ -86,7 +86,7 @@ export function BlogGrid() {
             <Quote size={50} fill="currentColor" className="absolute top-6 left-8 text-cyan-200 opacity-60" />
             <Quote size={50} fill="currentColor" className="absolute bottom-6 right-8 text-cyan-200 opacity-60 transform rotate-180" />
             
-            <h3 className="text-[28px] font-bold text-[var(--color-brand-dark)] leading-snug">
+            <h3 className="text-xl md:text-[28px] font-bold text-[var(--color-brand-dark)] leading-snug">
               The world is full of <br />
               beautiful places — <br />
               let's go <span className="text-[var(--color-brand)] italic">explore</span> them.
@@ -101,6 +101,13 @@ export function BlogGrid() {
           <BlogCard {...posts[2]} />
           <BlogCard {...posts[5]} />
         </div>
+      </div>
+
+      <div className="mt-16 flex justify-center w-full lg:hidden">
+        <button className="flex items-center gap-2 border border-gray-200 text-gray-600 rounded-full px-8 py-3 text-sm font-semibold hover:border-gray-300 hover:text-[var(--color-brand-dark)] transition-colors">
+          Load more posts
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
       </div>
     </section>
   );

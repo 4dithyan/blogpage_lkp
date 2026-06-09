@@ -45,13 +45,13 @@ export function Footer() {
               Discover handpicked experiences, unique stays, local food, cultural events and hidden places across World.
             </p>
 
-            <div className="flex items-center gap-2 max-w-lg bg-[rgba(255,255,255,0.08)] rounded-full p-1 border border-[rgba(255,255,255,0.15)] mt-6">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-2 max-w-lg bg-transparent sm:bg-[rgba(255,255,255,0.08)] sm:rounded-full sm:p-1 sm:border sm:border-[rgba(255,255,255,0.15)] mt-6">
               <input 
                 type="email" 
                 placeholder="Get updates on experiences, events & hidden destinations" 
-                className="bg-transparent text-white px-5 py-2.5 w-full focus:outline-none text-[13px] placeholder:text-gray-400"
+                className="bg-[rgba(255,255,255,0.08)] sm:bg-transparent border border-[rgba(255,255,255,0.15)] sm:border-none rounded-xl sm:rounded-none text-white px-5 py-3 w-full focus:outline-none text-[13px] placeholder:text-gray-400"
               />
-              <button className="bg-[var(--color-brand)] text-white px-6 py-2.5 rounded-full text-[13px] font-semibold hover:bg-cyan-600 transition-colors whitespace-nowrap">
+              <button className="bg-[var(--color-brand)] text-white px-6 py-3 rounded-xl sm:rounded-full text-[13px] font-semibold hover:bg-cyan-600 transition-colors whitespace-nowrap">
                 Join The Journey
               </button>
             </div>
@@ -73,7 +73,7 @@ export function Footer() {
           </div>
 
           {/* Links Sections */}
-          <div className="lg:w-[60%] grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div>
               <h4 className="text-[13px] font-bold text-[var(--color-brand)] tracking-wider uppercase mb-6">Explore</h4>
               <ul className="space-y-4 text-[13px] text-gray-300">
@@ -128,7 +128,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col xl:flex-row xl:items-center justify-between gap-8">
           
           {/* Icons Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full xl:w-auto text-[13px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full xl:w-auto text-[13px]">
             <div className="flex items-start gap-4">
               <div className="text-[var(--color-brand)] mt-1"><Star size={24} strokeWidth={1.5} /></div>
               <div>
@@ -137,7 +137,7 @@ export function Footer() {
               </div>
             </div>
             
-            <div className="flex items-start gap-4 border-l border-gray-100 pl-6">
+            <div className="flex items-start gap-4 sm:border-l sm:border-gray-100 sm:pl-6">
               <div className="text-[var(--color-brand)] mt-1"><Home size={24} strokeWidth={1.5} /></div>
               <div>
                 <p className="font-bold text-[var(--color-brand-dark)] mb-1">Unique Local Stays</p>
@@ -145,7 +145,7 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 border-l border-gray-100 pl-6">
+            <div className="flex items-start gap-4 sm:border-l sm:border-gray-100 sm:pl-6">
               <div className="text-[var(--color-brand)] mt-1"><Ticket size={24} strokeWidth={1.5} /></div>
               <div>
                 <p className="font-bold text-[var(--color-brand-dark)] mb-1">Easy Booking</p>
@@ -153,7 +153,7 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 border-l border-gray-100 pl-6">
+            <div className="flex items-start gap-4 sm:border-l sm:border-gray-100 sm:pl-6">
               <div className="text-[var(--color-brand)] mt-1"><Users size={24} strokeWidth={1.5} /></div>
               <div>
                 <p className="font-bold text-[var(--color-brand-dark)] mb-1">Local Communities</p>
