@@ -2,10 +2,9 @@ import { Search } from "lucide-react";
 
 const categories = [
   "All Posts",
-  "Destinations",
-  "Travel Guides",
-  "Experiences",
-  "Tips & Advice"
+  "Experience",
+  "Event",
+  "Stay"
 ];
 
 export function Filters() {

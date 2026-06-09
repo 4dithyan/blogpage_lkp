@@ -5,7 +5,7 @@ const posts = [
   {
     id: 1,
     image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Destinations",
+    category: "Experience",
     title: "Island Hopping in Greece: A Dream Itinerary",
     description: "Sun-kissed islands, crystal-clear waters and timeless beauty — perfect for your Greek adventure.",
     date: "May 20, 2024",
@@ -15,7 +15,7 @@ const posts = [
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Travel Guides",
+    category: "Experience",
     title: "A Guide to Italy's Most Romantic Lakes",
     description: "Explore the charm, culture and cuisine around Italy's hidden lake towns.",
     date: "May 18, 2024",
@@ -25,7 +25,7 @@ const posts = [
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Experiences",
+    category: "Event",
     title: "Unforgettable Evenings by the Sea",
     description: "How we create magical seaside events that leave lasting memories.",
     date: "May 12, 2024",
@@ -35,7 +35,7 @@ const posts = [
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Travel Guides",
+    category: "Experience",
     title: "Wander Off the Beaten Path: Hidden Gems",
     description: "Explore lesser-known places that offer incredible experiences and memories.",
     date: "May 6, 2024",
@@ -45,7 +45,7 @@ const posts = [
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Guides",
+    category: "Stay",
     title: "The Ultimate Escape: Private Villas in Bali",
     description: "Discover handpicked private villas in Bali that offer luxury, privacy and breathtaking views.",
     date: "May 15, 2024",
@@ -56,7 +56,7 @@ const posts = [
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    category: "Tips & Advice",
+    category: "Event",
     title: "8 Travel Tips for a Stress-Free Vacation",
     description: "Simple tips to help you plan better, travel smarter and enjoy more.",
     date: "May 15, 2024",

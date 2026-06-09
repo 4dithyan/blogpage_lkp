@@ -2,21 +2,33 @@ import { Plane, ShieldCheck, Heart, Clock, ArrowUp, Send } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full mt-24">
-      {/* Wave Separator */}
-      <div className="w-full h-16 md:h-24 lg:h-32 overflow-hidden leading-none mb-[-1px]">
+    <footer className="w-full mt-24 relative bg-[var(--color-brand-dark)]">
+      {/* Background Image on Left */}
+      <div 
+        className="absolute top-0 left-0 w-full md:w-[50%] h-[120%] z-0 pointer-events-none opacity-80"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          maskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+          WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)"
+        }}
+      />
+
+      {/* Wave Mask (White) */}
+      <div className="absolute top-0 left-0 w-full h-16 md:h-24 lg:h-32 overflow-hidden leading-none z-10 pointer-events-none">
         <svg
           viewBox="0 0 1440 120"
           preserveAspectRatio="none"
-          className="w-full h-full text-[var(--color-brand-dark)]"
+          className="w-full h-full text-white"
           fill="currentColor"
         >
-          <path d="M0,32 C288,-32 720,128 1440,32 L1440,120 L0,120 Z" />
+          <path d="M0,0 L1440,0 L1440,32 C720,128 288,-32 0,32 Z" />
         </svg>
       </div>
 
       {/* Main Footer Content */}
-      <div className="bg-[var(--color-brand-dark)] text-white pt-16 pb-12 px-6">
+      <div className="relative z-20 text-white pt-24 md:pt-32 pb-12 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           
           {/* Newsletter Section */}
@@ -98,7 +110,7 @@ export function Footer() {
       </div>
 
       {/* Bottom Info Bar */}
-      <div className="bg-white border-t border-gray-100 py-6 px-6">
+      <div className="relative z-20 bg-white border-t border-gray-100 py-6 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 w-full lg:w-auto text-sm">
             
