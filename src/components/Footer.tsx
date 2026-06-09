@@ -2,10 +2,10 @@ import { Plane, ShieldCheck, Heart, Clock, ArrowUp, Send } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full mt-24 relative bg-[var(--color-brand-dark)]">
+    <footer className="w-full mt-24 relative bg-[var(--color-brand-dark)] overflow-hidden">
       {/* Background Image on Left */}
       <div 
-        className="absolute top-0 left-0 w-full md:w-[50%] h-[120%] z-0 pointer-events-none opacity-80"
+        className="absolute top-0 left-0 w-full md:w-[50%] h-full z-0 pointer-events-none opacity-80"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')",
           backgroundSize: "cover",
