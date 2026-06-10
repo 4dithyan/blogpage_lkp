@@ -7,7 +7,7 @@ export function Footer() {
       <div 
         className="absolute top-0 left-0 w-full md:w-[50%] h-full z-0 pointer-events-none opacity-80"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')",
+          backgroundImage: "url('/images/footerimage.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           maskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
